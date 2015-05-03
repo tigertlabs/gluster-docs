@@ -6,12 +6,11 @@
 
 **Documentations**  
 
--  Contains [Administrator(User) Guides](./Administrator Guide/GlusterFS Introduction.md)  
+-  [Administrator(User) Guide](./Administrator Guide/GlusterFS Introduction.md)  
 
--  Contains [Developer Guides](./Developer-guide/Developers Index.md)  
+-  [Developer Guide](./Developer-guide/Developers Index.md)  
 
--  Contains [Quick start](./Quick-Start-Guide/Quickstart.md) Guides  
+-  [Quick start](./Quick-Start-Guide/Quickstart.md) Guides  
 
-**Upgrades**
-
--  Contains details on how to upgrade to Gluster 3.7.0
+-  [Upgrade Guide](./Upgrade-Guide/upgrade.md) Guides  
+  
