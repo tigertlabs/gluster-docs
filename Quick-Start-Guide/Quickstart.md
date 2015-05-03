@@ -82,8 +82,8 @@ Start the GlusterFS management daemon:
 *This is only appicable to Fedora 19 or previous versions. Fedora 20 and
 later should work fine with SELinux*
 
-Change SELinux to either “permissive” or “disabled” mode To put SELinux
-in permissive mode
+Change SELinux to either “permissive” or “disabled” mode.
+To put SELinux in permissive mode
 
 		setenforce 0
 
