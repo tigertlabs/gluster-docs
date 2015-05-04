@@ -18,7 +18,7 @@ Install Guide.
 
 **More Documentation**  
 
--  [Administrators' Guide](./Administrator Guide/GlusterFS Introduction.md)  
+-  [Administration Guide](./Administrator Guide/README.md)  
 
 -  [GlusterFS Developer Guide](./Developer-guide/Developers Index.md)  
 
