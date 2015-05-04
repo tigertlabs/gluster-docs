@@ -84,7 +84,7 @@ Translators
 -   [Performance/write-Behind Translator](./write-behind.md)
 -   [Translator Development](./translator-development.md)
 -   [Storage/posix Translator](./posix.md)
--   [Commpression translator](./network_compression.md)
+-   [Compression translator](./network_compression.md)
 
 Testing
 -------
