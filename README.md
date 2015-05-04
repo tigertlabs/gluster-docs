@@ -12,5 +12,5 @@
 
 -  [Quick start](./Quick-Start-Guide/Quickstart.md) Guides  
 
--  [Upgrade Guide](./Upgrade-Guide/upgrade.md) Guides  
+-  [Upgrade Guide](./Upgrade-Guide/README.md) Guides  
   
