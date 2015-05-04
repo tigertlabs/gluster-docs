@@ -23,4 +23,6 @@ Install Guide.
 -  [GlusterFS Developer Guide](./Developer-guide/Developers Index.md)  
 
 -  [Upgrade Guide](./Upgrade-Guide/README.md) - if you need to upgrade from an older version of GlusterFS.
+
+-  [Features](./Features/README.md) - Guides for the features in the new release.
   
