@@ -22,6 +22,7 @@ code check-in.
     Change](http://www.gluster.org/2012/05/glusterfs-license-change/) -
     we recently changed the client library code to a dual license under
     the GPL v2 and the LGPL v3 or later
+-   [GlusterFS Coding Standards](./coding-standard.md)
 
 Compiling Gluster
 -----------------
@@ -50,9 +51,45 @@ Developing
     The [Backport Guidelines](./Backport Guidelines.md) describe the steps that
     branches too.
 
+Adding File operations
+----------------------
+
+-   [Steps to be followed when adding a new FOP to GlusterFS ](./adding-fops.md)
+
+Automatic File Replication
+--------------------------
+
+-   [Cluster/afr translator](./afr.md)
+-   [History of Locking in AFR](./afr-locks-evolution.md)
+-   [Self heal Daemon](./afr-self-heal-daemon.md)
+
+Data Structures
+---------------
+
+-   [inode data structure](./datastructure-inode.md)
+-   [iobuf data structure](./datastructure-iobuf.md)
+-   [mem-pool data structure](./datastructure-mem-pool.md)
+
+Find the gfapi symbol versions [here](./gfapi-symbol-versions.md)
+
+Daemon Management Framework
+---------------------------
+
+-   [How to introduce new daemons using daemon management framework](./daemon-management-framework.md)
+
+Translators
+-----------
+
+-   [Block Device Tanslator](./bd-xlator.md)
+-   [Performance/write-Behind Translator](./write-behind.md)
+-   [Translator Development](./translator-development.md)
+-   [Storage/posix Translator](./posix.md)
+-   [Compression translator](./network_compression.md)
+
 Testing
 -------
 
+-   [Unit Tests in GlusterFS](./unittest.md)
 -   [Using the Gluster Test
     Framework](./Using Gluster Test Framework.md) - Step by
     step instructions for running the Gluster Test Framework
@@ -84,5 +121,6 @@ Patch Acceptance
 Release Process
 ---------------
 
+-   [Versioning](./versioning.md)
 -   [GlusterFS Release Process](./GlusterFS Release process.md) -
     Our release process / checklist
