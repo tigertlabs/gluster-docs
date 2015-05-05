@@ -18,7 +18,7 @@
 
 4.  [POSIX Access Control Lists](./Access Control Lists.md)
 
-5.  [Accessing Data - Seting Up Clients](./Seting Up Clients.md)
+5.  [Accessing Data - Setting Up Clients](./Setting Up Clients.md)
 
 6.  Volume Options
 
