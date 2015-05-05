@@ -14,13 +14,14 @@ basic basic concepts with. You will then be much better equipped to read the mor
 Install Guide.
 
 -  [Quick Start Guide](./Quick-Start-Guide/Quickstart.md) - Start here if you are new to Gluster!
--  [Install Guides](./Install-Guide/Overview.md) for various operating systems
+
+-  [Installation Guides](./Install-Guide/Overview.md) describes the prerequisites and provides step-by-instructions to install GlusterFS on various operating systems.
 
 **More Documentation**  
 
--  [Administration Guide](./Administrator Guide/README.md)  
+-  [Administration Guide](./Administrator Guide/README.md) - describes the configuration and management of GlusterFS. 
 
--  [GlusterFS Developer Guide](./Developer-guide/Developers Index.md)  
+-  [GlusterFS Developer Guide](./Developer-guide/Developers Index.md) - - describes how you can contribute to this open source project; built through the efforts of its dedicated, passionate community. 
 
 -  [Upgrade Guide](./Upgrade-Guide/README.md) - if you need to upgrade from an older version of GlusterFS.
 
