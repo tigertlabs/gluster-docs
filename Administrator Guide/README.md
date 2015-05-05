@@ -1,7 +1,5 @@
 # Administration Guide
 
-### Configuring and managing Gluster Filesystem
-
 1.  Platform introduction
 
 	*  [About GlusterFS](./GlusterFS Introduction.md)
