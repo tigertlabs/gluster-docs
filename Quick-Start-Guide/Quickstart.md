@@ -1,6 +1,7 @@
-Purpose
+Installing GlusterFS - a Quick Start Guide
 -------
 
+#### Purpose of this document
 This document is intended to give you a step by step guide to setting up
 GlusterFS for the first time. For this tutorial, we will assume you are
 using Fedora 21 (or later) virtual machines (other distributions and methods can be
@@ -18,7 +19,7 @@ installing using different methods (in local virtual machines, EC2 and
 baremetal) and different distributions, then have a look at the Install
 guide.
 
-### Automatically Deploying GlusterFS with Puppet-Gluster+Vagrant
+#### Automatically deploying GlusterFS with Puppet-Gluster+Vagrant
 
 If you'd like to deploy GlusterFS automatically using
 Puppet-Gluster+Vagrant, have a look at [this
