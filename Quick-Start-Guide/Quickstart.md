@@ -3,7 +3,7 @@ Purpose
 
 This document is intended to give you a step by step guide to setting up
 GlusterFS for the first time. For this tutorial, we will assume you are
-using Fedora 20 virtual machines (other distributions and methods can be
+using Fedora 21 virtual machines (other distributions and methods can be
 found in the new user guide, below. We also do not explain the steps in
 detail here, this guide is just to help you get it up and running as
 soon as possible. After you deploy GlusterFS by following these steps,
@@ -77,29 +77,7 @@ Start the GlusterFS management daemon:
 		       ├ 19304 /usr/sbin/glusterfsd --xlator-option georep-server.listen-port=24009 -s localhost...
 		       └ 19309 /usr/sbin/glusterfs -f /var/lib/glusterd/nfs/nfs-server.vol -p /var/lib/glusterd/...
 
-### Step 4 - Configure SELinux and iptables
-
-*This is only appicable to Fedora 19 or previous versions. Fedora 20 and
-later should work fine with SELinux*
-
-Change SELinux to either “permissive” or “disabled” mode.
-To put SELinux in permissive mode
-
-		setenforce 0
-
-To see the current mode of SELinux
-
-		getenforce
-
-To make the SELinux changes permanent
-
-		Change “/etc/selinux/config” and make “SELINUX=disabled” or ”SELINUX=permissive” in it
-
-Remove all iptable rules, so that it does not interfere with Gluster
-
-		iptables -F
-
-### Step 5 - Configure the trusted pool
+### Step 4 - Configure the trusted pool
 
 From "server1"
 
@@ -116,7 +94,7 @@ Note: Once this pool has been established, only trusted members may
 probe new servers into the pool. A new server cannot probe the pool, it
 must be probed from the pool.
 
-### Step 6 - Set up a GlusterFS volume
+### Step 5 - Set up a GlusterFS volume
 
 On both server1 and server2:
 
@@ -135,7 +113,7 @@ Note: If the volume is not started, clues as to what went wrong will be
 in log files under /var/log/glusterfs on one or both of the servers -
 usually in etc-glusterfs-glusterd.vol.log
 
-### Step 7 - Testing the GlusterFS volume
+### Step 6 - Testing the GlusterFS volume
 
 For this step, we will use one of the servers to mount the volume.
 Typically, you would do this from an external machine, known as a
