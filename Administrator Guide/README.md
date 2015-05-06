@@ -1,6 +1,6 @@
 # Administration Guide
 
-1.  Platform introduction
+1.  Introduction
 
 	*  [About GlusterFS](./GlusterFS Introduction.md)
 	*  [Terminologies](../Quick-Start-Guide/Terminologies.md)
@@ -20,13 +20,13 @@
 
 5.  [Accessing Data - Setting Up Clients](./Setting Up Clients.md)
 
-6.  Volume Options
+6.  GlusterFS Volume Options
 
 	*  [Setting Up Volumes](./Setting Up Volumes.md)
 	*  [Managing Volumes](./Managing Volumes.md)
-	*  [Building QEMU With gfapi For Debian Based Systems](./Building QEMU With gfapi For Debian Based Systems.md)
+	*  [Building QEMU with gfapi for Debian Based Systems](./Building QEMU With gfapi For Debian Based Systems.md)
 	*  [Modifying .vol files with a filter](./GlusterFS Filter.md)
-	*  [Resolving Peer Rejected](./Resolving Peer Rejected.md)
+	*  [Resolving Peer Rejected State](./Resolving Peer Rejected.md)
 	
 7.  [GlusterFS Service Logs and Locations](./Logging.md)
 
@@ -49,7 +49,7 @@
 	*  [Accessing GlusterFS using Cinder Hosts](./GlusterFS Cinder.md)
 	*  [GlusterFS with Keystone](./GlusterFS Keystone Quickstart.md)
 	*  [Hadoop Compatiable Storage with GlusterFS](./Hadoop.md)
-	*  [Install Gluster on Top of ZFS](./Gluster On ZFS.md)
+	*  [Install Gluster on ZFS](./Gluster On ZFS.md)
 	
 14.  [Securing GlusterFS Communication using SSL](./SSL.md)	
 	
