@@ -19,10 +19,15 @@
 -   [Server Quorum](./server-quorum.md)
 -   [Write Once Read Many](./worm.md)
 -   [zerofill API for GlusterFS](./zerofill.md)
--   [bit rot docs](./bitrot-docs.md)
--   [bit rot memory usage](./memory-usage.md)
--   [bit rot object versioning](./object-versioning.md)
--   [quota object count](./quota-object-count.md)
 -   [quota scalability.md](./quota-scalability.md)
 -   [Distributed geo replication](./distributed-geo-rep.md)
 -   [libgf changelog](./libgfchangelog.md)
+
+###Features in GlusterFS 3.7
+
+-   [bit rot docs](./bitrot-docs.md)
+-   [bit rot memory usage](./memory-usage.md)
+-   [bit rot object versioning](./object-versioning.md)
+-   [shard](./shard.md)
+-   [upcall](./upcall.md)
+-   [quota object count](./quota-object-count.md)
