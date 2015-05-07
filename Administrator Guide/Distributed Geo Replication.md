@@ -69,9 +69,11 @@ level access to the particular volume.
 4.  In any one of Slave node, Run the following commands to add options to glusterd vol file(`/etc/glusterfs/glusterd.vol`
     in rpm installations and `/usr/local/etc/glusterfs/glusterd.vol` in Source installation.
 
+    ```sh
     gluster system:: execute mountbroker opt mountbroker-root /var/mountbroker-root
     gluster system:: execute mountbroker opt geo-replication-log-group geogroup
     gluster system:: execute mountbroker opt rpc-auth-allow-insecure on
+    ```
 
 5.  In any one of Slave node, Add Mountbroker user to glusterd vol file using,
 
@@ -114,30 +116,36 @@ To add multiple volumes per mountbroker user,
     ```
 
 ### Configuring meta volume
-A gluster meta volume needs to be configured with geo-replication to
-better handle rename and other consistency issues in geo-replication during
-brick/node down scenarios when master volume is configured with EC(Erasure Code)/AFR.
-Following are the steps to configure meta volume
+
+NOTE: If shared meta volume is already created and mounted at '/var/run/gluster/shared_storage' as part of nfs or snapshot, please jump into section 'Configure meta volume with geo-replication'.
+
+A 3-way replicated common gluster meta-volume should be configured and is shared by nfs, snapshot and geo-replication. The name of the meta-volume should be 'gluster_shared_storage' and should be mounted at '/var/run/gluster/shared_storage/'.
+
+The meta volume needs to be configured with geo-replication to better handle
+rename and other consistency issues in geo-replication during brick/node down
+scenarios when master volume is configured with EC(Erasure Code)/AFR.
+
+**Following are the steps to configure meta volume:**
 
 Create a 3 way replicated meta volume in the master cluster with all three bricks from different nodes as follows.
 
-    ```sh
-    gluster volume create <meta_vol> replica 3 <host1>:<brick_path> <host2>:<brick_path> <host3>:<brick_path>
-    ```
-
+        gluster volume create gluster_shared_storage replica 3 <host1>:<brick_path> <host2>:<brick_path> <host3>:<brick_path>
+    
 Start the meta volume as follows.
 
-    ```sh
-    gluster volume start <meta_vol>
-    ```
+        gluster volume start <meta_vol>
 
-Configure meta volume with geo-replication session as follows.
+Mount the meta volume as follows in all the master nodes.
 
-    ```sh
-    gluster volume geo-replication <master_volume> <slave_host>::<slave_volume> config meta_volume <meta_vol>
-    # If Mountbroker Setup,
-    gluster volume geo-replication <master_volume> <mountbroker_user>@<slave_host>::<slave_volume> config meta_volume <meta_vol>
-    ```
+        mount -t glusterfs <master_host>:gluster_shared_storage /var/run/gluster/shared_storage
+
+###Configure meta volume with geo-replication session
+
+        gluster volume geo-replication <master_volume> <slave_host>::<slave_volume> config use_meta_volume true
+
+    If Mountbroker Setup,
+
+        gluster volume geo-replication <master_volume> <mountbroker_user>@<slave_host>::<slave_volume> config use_meta_volume true
 
 #### Starting a geo-rep session
 There is no change in this command from previous versions to this version.
