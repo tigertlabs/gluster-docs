@@ -92,6 +92,7 @@ pages:
 - ['Upgrade-Guide/README.md', 'Upgrade-Guide', 'Upgrade-Guide Home']
 - ['Upgrade-Guide/upgrade_to_3.5.md', 'Upgrade-Guide', 'Upgrade to 3.5']
 - ['Upgrade-Guide/upgrade_to_3.6.md', 'Upgrade-Guide', 'Upgrade to 3.6']
+- ['Upgrade-Guide/upgrade_to_3.7.md', 'Upgrade-Guide', 'Upgrade to 3.7']
 - ['Features/README.md', 'Features', 'Features Home']
 - ['Features/afr-arbiter-volumes.md', 'Features', 'AFR Arbiter Volumes']
 - ['Features/bitrot-docs.md', 'Features', 'bitrot docs']
