@@ -90,4 +90,4 @@ Now, we should start the volume.
 
 		gluster volume start gv0
 
-Find all documentation [here](../README.md)
+Find all documentation [here](../index.md)
