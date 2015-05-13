@@ -9,6 +9,7 @@
 -   [quota object count](./quota-object-count.md)
 -   [GlusterFS NFS Ganesha Integration](./glusterfs_nfs-ganesha_integration.md)
 -   [Tiering](./tier.md)
+-   [Trash](./trash.md)
 
 ###Features in GlusterFS 3.6
 

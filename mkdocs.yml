@@ -103,6 +103,7 @@ pages:
 - ['Features/quota-object-count.md', 'Features', 'quota object count']
 - ['Features/glusterfs_nfs-ganesha_integration.md', 'Features', 'nfs-ganesha integration']
 - ['Features/tier.md', 'Features', 'tiering']
+- ['Features/trash.md' 'Features', 'trash']
 - ['Features/afr-statistics.md', 'Features', 'AFR Statistics']
 - ['Features/afr-v1.md', 'Features', 'AFR ver1']
 - ['Features/brick-failure-detection.md', 'Features', 'Brick Failure Detection']
